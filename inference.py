@@ -3,7 +3,8 @@ import numpy as np
 import os
 
 
-base_path = r"C:\Users\alzah\applied\\"
+base_path = os.path.dirname(os.path.abspath(__file__)) + "/"
+
 
 
 model = joblib.load(base_path + "best_rf.joblib")
